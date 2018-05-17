@@ -7,6 +7,7 @@ var logger = require('morgan');
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/SithuNodeJSExpressMongodb');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
