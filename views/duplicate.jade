@@ -1,0 +1,9 @@
+  doctype html
+html
+  head
+    title= statusMsg
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    p Hello, User!  #{statusMsg}
+    a(href="/learning")= "addDetails"

@@ -1,5 +1,9 @@
 extends layout
 
 block content
-    h1=title
-    P Current status is #{title}
+    h1.
+        Learning List
+    ul
+        each mylearn, i in detailslist
+            li
+                p #{mylearn.learningurl}
