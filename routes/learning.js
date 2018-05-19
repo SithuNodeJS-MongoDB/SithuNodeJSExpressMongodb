@@ -14,6 +14,15 @@ router.post('/addFormDetails',function(req,res,next){
     // Get our form values. These rely on the "name" attributes
     var newUrl = req.body.learningurl;
     var newTitle = req.body.learningtitle;
+    var newComment = req.body.learningcomment;
+    console.log("req body is : ",req.body);
+    var newTechies = [];
+    Object.keys(req.body).forEach(function(k) {
+        if(k !== "learningurl" && k !== "learningtitle" && k !== "learningcomment") {
+            newTechies.push(k);
+        }
+    });
+    console.log("updated json data is : ", newTechies);
 
     // Set our collection
     var collection = db.get('detailscollection');
@@ -26,7 +35,9 @@ router.post('/addFormDetails',function(req,res,next){
             //Submit the data now
             collection.insert({
                 "learningurl" : newUrl,
-                "learningtitle" : newTitle
+                "learningtitle" : newTitle,
+                "learningcomment": newComment,
+                "learningtechies": newTechies
             }, function(err, docs){
                 if(err){
                     //If it is failed, return error

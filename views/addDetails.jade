@@ -81,75 +81,79 @@ html
         h1 My Learning Details
         p Please fill in this form to Adding upcoming learning details for you
         hr
-        label(for='learningurl')
-          b Learning URL
-        input(type='text', placeholder='Enter the Learning URL', name='learningurl', required='')
-        label(for='learningtitle')
-          b Learning Title
-        input(type='text', placeholder='Enter the Learning Title', name='learningtitle', required='')
-        label(for='learningcomment')
-          b Learning comments
-        textarea(placeholder='Enter the Learning comments', name='learningcomment', required='')
-        label
-          input(type='checkbox', checked='checked', name='html', style='margin-bottom:15px')
-          |  Html
-        label
-          input(type='checkbox', checked='checked', name='css', style='margin-bottom:15px')
-          |  Css
-        label
-          input(type='checkbox', checked='checked', name='javascript', style='margin-bottom:15px')
-          |  Javascript
-        label
-          input(type='checkbox', checked='checked', name='jquery', style='margin-bottom:15px')
-          |  Jquery
-        label
-          input(type='checkbox', checked='checked', name='angularjs', style='margin-bottom:15px')
-          |  Angularjs
-        label
-          input(type='checkbox', checked='checked', name='angular2', style='margin-bottom:15px')
-          |  Angular2
-        label
-          input(type='checkbox', checked='checked', name='angular4', style='margin-bottom:15px')
-          |  Angular4
-        label
-          input(type='checkbox', checked='checked', name='angular5', style='margin-bottom:15px')
-          |  Angular5
-        label
-          input(type='checkbox', checked='checked', name='angular6', style='margin-bottom:15px')
-          |  Angular6
-        label
-          input(type='checkbox', checked='checked', name='reactjs', style='margin-bottom:15px')
-          |  ReactJS
-        label
-          input(type='checkbox', checked='checked', name='vuejs', style='margin-bottom:15px')
-          |  VueJS
-        label
-          input(type='checkbox', checked='checked', name='nodejs', style='margin-bottom:15px')
-          |  NodeJS
-        label
-          input(type='checkbox', checked='checked', name='mongodb', style='margin-bottom:15px')
-          |  MongoDB
-        label
-          input(type='checkbox', checked='checked', name='mlab', style='margin-bottom:15px')
-          |  Mlab
-        label
-          input(type='checkbox', checked='checked', name='karmajasmineprotractor', style='margin-bottom:15px')
-          |  Karma Jasmine Protractor
-        label
-          input(type='checkbox', checked='checked', name='gulp', style='margin-bottom:15px')
-          |  Gulp
-        label
-          input(type='checkbox', checked='checked', name='git', style='margin-bottom:15px')
-          |  Git
-        label
-          input(type='checkbox', checked='checked', name='issuewithsolution', style='margin-bottom:15px')
-          |  IssueWithSolution
-        label
-          input(type='checkbox', checked='checked', name='documentation', style='margin-bottom:15px')
-          |  Documentation
-        label
-          input(type='checkbox', checked='checked', name='important', style='margin-bottom:15px')
-          |  Important
-        .clearfix
-          button.clearbtn(type='button', onclick='myFunction()') Clear
-          button.addbtn(type='submit') Add
+        .row
+          .col-lg-6
+            label(for='learningurl')
+              b Learning URL
+            input(type='text', placeholder='Enter the Learning URL', name='learningurl', required='')
+            label(for='learningtitle')
+              b Learning Title
+            input(type='text', placeholder='Enter the Learning Title', name='learningtitle', required='')
+            label(for='learningcomment')
+              b Learning comments
+            textarea(placeholder='Enter the Learning comments', name='learningcomment', required='')
+          .col-lg-6
+            label
+              input(type='checkbox', checked='checked', name='html', style='margin-bottom:15px')
+              |  Html
+            label
+              input(type='checkbox', checked='checked', name='css', style='margin-bottom:15px')
+              |  Css
+            label
+              input(type='checkbox', checked='checked', name='javascript', style='margin-bottom:15px')
+              |  Javascript
+            label
+              input(type='checkbox', checked='checked', name='jquery', style='margin-bottom:15px')
+              |  Jquery
+            label
+              input(type='checkbox', checked='checked', name='angularjs', style='margin-bottom:15px')
+              |  Angularjs
+            label
+              input(type='checkbox', checked='checked', name='angular2', style='margin-bottom:15px')
+              |  Angular2
+            label
+              input(type='checkbox', checked='checked', name='angular4', style='margin-bottom:15px')
+              |  Angular4
+            label
+              input(type='checkbox', checked='checked', name='angular5', style='margin-bottom:15px')
+              |  Angular5
+            label
+              input(type='checkbox', checked='checked', name='angular6', style='margin-bottom:15px')
+              |  Angular6
+            label
+              input(type='checkbox', checked='checked', name='reactjs', style='margin-bottom:15px')
+              |  ReactJS
+            label
+              input(type='checkbox', checked='checked', name='vuejs', style='margin-bottom:15px')
+              |  VueJS
+            label
+              input(type='checkbox', checked='checked', name='nodejs', style='margin-bottom:15px')
+              |  NodeJS
+            label
+              input(type='checkbox', checked='checked', name='mongodb', style='margin-bottom:15px')
+              |  MongoDB
+            label
+              input(type='checkbox', checked='checked', name='mlab', style='margin-bottom:15px')
+              |  Mlab
+            label
+              input(type='checkbox', checked='checked', name='karmajasmineprotractor', style='margin-bottom:15px')
+              |  Karma Jasmine Protractor
+            label
+              input(type='checkbox', checked='checked', name='gulp', style='margin-bottom:15px')
+              |  Gulp
+            label
+              input(type='checkbox', checked='checked', name='git', style='margin-bottom:15px')
+              |  Git
+            label
+              input(type='checkbox', checked='checked', name='issuewithsolution', style='margin-bottom:15px')
+              |  IssueWithSolution
+            label
+              input(type='checkbox', checked='checked', name='documentation', style='margin-bottom:15px')
+              |  Documentation
+            label
+              input(type='checkbox', checked='checked', name='important', style='margin-bottom:15px')
+              |  Important
+        .row
+          .clearfix
+            button.clearbtn(type='button', onclick='myFunction()') Clear
+            button.addbtn(type='submit') Add

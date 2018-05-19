@@ -14,9 +14,11 @@ var homeRouter = require('./routes/home');
 var learningRouter = require('./routes/learning');
 var app = express();
 
+//app.engine('html', require('ejs').renderFile);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+//app.set('view engine', 'html');
 
 app.use(logger('dev'));
 app.use(express.json());
